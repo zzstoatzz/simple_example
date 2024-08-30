@@ -1,3 +1,5 @@
 .venv
 *.egg-info
 silly
+__pycache__
+**/__pycache__
