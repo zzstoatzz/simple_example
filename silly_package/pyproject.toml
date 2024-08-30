@@ -1,0 +1,17 @@
+[project]
+name = "silly_package"
+version = "1.2.3"
+readme = "Just a test case"
+description = "Just a test case"
+dependencies = ["prefect==3.0.0rc19"]
+requires-python = "~=3.10"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dist = ["build[virtualenv]"]
+
+[project.scripts]
+silly_script = "silly_package.silly_flow:app"
